@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=4 uid="uid://jay7687saq4u"]
+[gd_scene load_steps=8 format=4 uid="uid://jay7687saq4u"]
 
 [ext_resource type="PackedScene" uid="uid://drpm0erxoq4rs" path="res://scenes/player.tscn" id="1_pyhbh"]
 [ext_resource type="Texture2D" uid="uid://dnn61rvixhtla" path="res://assets/BasicPlains-tileset-Ver.2_by_AxulArt.png" id="2_275kx"]
+[ext_resource type="PackedScene" uid="uid://bnvw7017ou8y4" path="res://scenes/overworld_enemy.tscn" id="3_5heao"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_firke"]
 texture = ExtResource("2_275kx")
@@ -114,3 +115,11 @@ scale = Vector2(0.107511, 0.107511)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
+
+[node name="OverworldEnemy" parent="." instance=ExtResource("3_5heao")]
+position = Vector2(247, 322)
+scale = Vector2(0.1, 0.1)
+
+[node name="OverworldEnemy2" parent="." instance=ExtResource("3_5heao")]
+position = Vector2(-100, -40)
+scale = Vector2(0.1, 0.1)
