@@ -261,8 +261,13 @@ radius = 18.0
 script = ExtResource("1_0rthc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, -8)
+scale = Vector2(5.80459, 5.80459)
 sprite_frames = SubResource("SpriteFrames_cpmaw")
 animation = &"idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(3.4702, 3.4702)
 shape = SubResource("CircleShape2D_3il24")
+
+[node name="Camera2D" type="Camera2D" parent="."]
