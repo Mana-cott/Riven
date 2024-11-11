@@ -269,5 +269,3 @@ animation = &"idle_down"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(3.4702, 3.4702)
 shape = SubResource("CircleShape2D_3il24")
-
-[node name="Camera2D" type="Camera2D" parent="."]
